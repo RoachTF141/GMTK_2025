@@ -1,15 +1,18 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement; // Add this line
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
     public int disappearCount = 0;
-    public int targetCount = 4; // ´ï³É´ÎÊı
+    public int targetCount = 4; // è¾¾æˆæ¬¡æ•°
 
-    public Image fadeOverlay;      // ÍÏÈëUIºÚÄ»
-    public float fadeSpeed = 1f;   // ½¥±äËÙ¶È
+    public Image fadeOverlay;      // æ‹–å…¥UIé»‘å¹•
+    public float fadeSpeed = 1f;   // æ¸å˜é€Ÿåº¦
+
+    public string nextSceneName; // ä¸‹ä¸€ä¸ªåœºæ™¯
 
     private bool fading = false;
 
@@ -39,6 +42,8 @@ public class GameManager : MonoBehaviour
             yield return null;
         }
 
-        Debug.Log("³¡¾°Íê³É£¬¿ÉÒÔ¼ÓÔØÏÂÒ»¹Ø»ò´¥·¢Ê¤Àû");
+        // The fade is complete, now load the next scene.
+        Debug.Log("åœºæ™¯å®Œæˆï¼Œå¯ä»¥åŠ è½½ä¸‹ä¸€å…³æˆ–è§¦å‘èƒœåˆ©");
+        SceneManager.LoadScene(nextSceneName); // Add this line to load the next scene
     }
 }
