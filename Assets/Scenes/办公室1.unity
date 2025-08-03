@@ -2440,7 +2440,7 @@ MonoBehaviour:
   targetCount: 4
   fadeOverlay: {fileID: 467178089}
   fadeSpeed: 1
-  nextSceneName: 
+  nextSceneName: "\u5367\u5BA4_1"
 --- !u!4 &1560420570
 Transform:
   m_ObjectHideFlags: 0
@@ -2708,7 +2708,7 @@ Transform:
   m_GameObject: {fileID: 1769548903}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.79, y: -2.63, z: 0.7120292}
+  m_LocalPosition: {x: -2.79, y: -2.63, z: 0.46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
